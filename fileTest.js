@@ -35,7 +35,50 @@ function beyond(num) {
     }
 }
 
+function theCode(list) {
+    let dividedList = list.split(" ");
+    for (let i=0; i<dividedList.length; i++) {
+        if (dividedList[i].charAt(0) === 'a') {
+            console.log(dividedList[i].charAt(1));
+        }
+        else if (dividedList[i].charAt(0) === 'b') {
+            console.log(dividedList[i].charAt(2));
+        }
+        else if (dividedList[i].charAt(0) === 'c') {
+            console.log(dividedList[i].charAt(3));
+        }
+        else if (dividedList[i].charAt(0) === 'd') {
+            console.log(dividedList[i].charAt(4));
+        }
+         else {console.log(" ")}
+    }
+}
 
-beyond(Math.log(0));
+function daysOfMonth(name) {
+    switch(name){
+        case 'January':
+        case 'March':
+        case 'May':
+        case 'July':
+        case 'August':
+        case 'October':
+        case 'December':
+            console.log(`${name} has 31 days`);
+            break;
+        
+        case 'February':
+            console.log(`${name} has 28 days`);
+            break;
+        
+        default:
+            console.log(`${name} has 30 days`);
+    }
+}
+
+
+
 whoAmI("Sam", 28);
 jediName("Tricia", "Forrester");
+beyond(Math.log(0));
+theCode('craft block argon meter bells brown croon droop');
+daysOfMonth('December');
